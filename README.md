@@ -1,5 +1,5 @@
-Mobile Factory Configurator
-Project Description
+Mobile Factory Configurator->>
+Project Description:
 At Mobile Factory Pvt Ltd., we sell configurable mobiles, and this project serves as a backend API for configuring and creating orders based on selected components such as screen type, camera type, port, OS, and body. The API ensures that each order is valid and calculates the total price.
 
 Installation
