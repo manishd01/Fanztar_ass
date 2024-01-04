@@ -1,0 +1,40 @@
+
+###
+
+GET http://localhost:8080
+
+### correct call 1 
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "components": ["J", "A", "D", "F", "K"]
+}
+
+### in-correct call 
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "components": ["E", "A", "F", "B", "K"]
+}
+
+### one element selected more than once
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "components": ["A","J", "A", "D", "F", "K"]
+}
+
+
+### less element selected:
+ POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "components": [ "A", "D", "F", "K"]
+}
